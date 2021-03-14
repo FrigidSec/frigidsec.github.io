@@ -197,6 +197,9 @@ i {
 
 /* Desktop Size */
 @media (min-width: 1200px) {
+	div.navbar-dropdown.is-right {
+	    box-shadow: -0.35rem 0.35rem 0.5rem 0.01em #bd93f9;
+	}
     .hero.is-large .hero-body {
         padding: 30rem 1.5rem 6rem;
     }
