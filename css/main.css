@@ -142,6 +142,7 @@ div.navbar-dropdown.is-right .navbar-item:hover {
 
 #contact .site-body.content {
     flex-direction: row;
+	flex-wrap: wrap;
     align-items: center;
     justify-content: center;
 }
