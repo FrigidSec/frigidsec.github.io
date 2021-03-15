@@ -89,7 +89,8 @@ div.navbar-dropdown.is-right .navbar-item:hover {
 }
 
 #intro, #team, #contact {
-    margin: 2rem 0;
+	padding-top: 4rem;
+    margin: -2rem 0;
 }
 
 .content-grid {
@@ -204,6 +205,10 @@ i {
         padding: 30rem 1.5rem 6rem;
     }
 
+	#intro, #team, #contact {
+		padding-top: 5rem;
+		margin-top: -2rem;
+	}
     .content-grid {
         grid-template-columns: 1fr 1fr;
     }
