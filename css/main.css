@@ -1,0 +1,262 @@
+body, html {
+    height: 100%;
+    background-color: #282a36;
+    font-family: 'Quicksand';
+    scroll-behavior: smooth;
+}
+
+/* Dr. Glitch Font */
+@font-face {
+    font-family: 'Dr. Glitch';
+    src: url('../assets/fonts/Doctor Glitch.otf');
+}
+
+/* ================= Navbar Customization ================== */
+.navbar.is-dark {
+    background-color: #282a36;
+    box-shadow: 0 0 0.5rem 0.05rem #bd93f9;
+    font-weight: 500;
+}
+
+.navbar.is-dark .navbar-brand > a.navbar-item:hover {
+    background-color: #44475a;
+}
+
+.navbar.is-dark .navbar-end > a.navbar-item:hover {
+    background-color: #44475a;
+}
+
+.navbar.is-dark .navbar-item.has-dropdown:hover .navbar-link {
+    background-color: #44475a;
+}
+
+div.navbar-menu.is-active {
+    background-color: #282a36;
+}
+
+.navbar.is-dark .navbar-end > .navbar-item,
+.navbar.is-dark .navbar-end .navbar-link {
+    color: #bd93f9;
+}
+
+div.navbar-dropdown.is-right {
+    background-color: #282a36;
+    border-top: 2px solid #bd93f9;
+}
+
+hr.navbar-divider {
+    background-color: #8be9fd;
+}
+
+div.navbar-dropdown.is-right .navbar-item {
+    color: #ff79c6;
+}
+
+div.navbar-dropdown.is-right .navbar-item:hover {
+    background-color: #44475a;
+}
+/* ========================================================= */
+
+.hero {
+    background-image:  linear-gradient(rgba(0, 0, 0, 0), rgba(40, 42, 54, 1)), url('https://images.unsplash.com/photo-1519681393784-d120267933ba?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1350&q=80');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.hero-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero-body .button.is-primary {
+    background-color: #50fa7b;
+    color: #282a36;
+    letter-spacing: 0.12em;
+    box-shadow: 0 0rem 0.8rem #282a36;
+    font-size: 1.4rem;
+    transition: background-color 400ms, transform 300ms, box-shadow 300ms;
+}
+
+.hero-body .button.is-primary:hover {
+    transform: translateY(-3%);
+    box-shadow: 0 0.5rem 0.8rem #282a36;
+}
+
+.hero-body .title {
+    font-family: 'Dr. Glitch', 'Montserrat', sans-serif;
+    font-weight: normal;
+    text-shadow: 0 0.2rem 0.4rem #282a36;
+    font-size: 4.5rem;
+    color: #bd93f9;
+}
+
+#intro, #team, #contact {
+	padding-top: 4rem;
+    margin: -2rem 0;
+}
+
+.content-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 0 0.7rem 3rem 0.7rem;
+    justify-content: center;
+    grid-auto-flow: dense;
+}
+
+.site-body.title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 400;
+    color: #ff79c6;
+}
+
+.site-body.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 1.2rem;
+    color: #f8f8f2;
+}
+
+#team .site-body.content {
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.content figure:not(:last-child) {
+    margin-bottom: 0.5em;
+}
+
+#team .team-member {
+    display: flex;
+    margin: 1rem;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+
+#contact .site-body.content {
+    flex-direction: row;
+	flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+#contact a {
+    font-size: 1.5rem;
+    margin: 1rem;
+    padding: 0.5rem;
+    color: #8be9fd;
+    border: 0.2rem solid #8be9fd;
+    border-radius: 50%;
+    transition: transform 300ms;
+}
+
+i {
+    padding-left: 0.2em;
+}
+
+#contact a:hover {
+    transform: translateY(-3%);
+    box-shadow: 0 0rem 0.5rem #8be9fd;
+}
+
+.quote {
+    font-family: 'Quicksand', sans-serif;
+    font-style: italic;
+    color: #f1fa8c;
+}
+
+/* Tablet Size */
+@media (min-width: 900px) {
+    .hero-body {
+        margin-bottom: 4rem;
+    }
+    .content-grid {
+        margin: 3rem 1.5rem;
+    }
+    .site-body.title {
+        font-size: 3rem;
+    }
+    .site-body.content {
+        font-size: 1.5rem;
+    }
+    #team .team-member {
+        font-size: 1rem;
+    }
+    #contact a {
+        padding: 1.5rem;
+        font-size: 2.5rem;
+    }
+}
+
+/* Desktop Size */
+@media (min-width: 1200px) {
+	div.navbar-dropdown.is-right {
+	    box-shadow: -0.35rem 0.35rem 0.5rem 0.01em #bd93f9;
+	}
+    .hero.is-large .hero-body {
+        padding: 30rem 1.5rem 6rem;
+    }
+
+	#intro, #team, #contact {
+		padding-top: 4rem;
+		margin-top: 0.3rem;
+	}
+    .content-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+    .site-body {
+        margin: 2rem 0;
+    }
+    .site-body.title {
+        font-size: 4rem;
+    }
+    .site-body.content {
+        font-size: 1.8rem;
+    }
+    .site-body.reverse-title {
+        grid-column: 2 / -1;
+    }
+
+    .site-body.reverse-content {
+        grid-column: 1 / 2;
+    }
+    #team .team-member {
+        font-size: 1.3rem;
+    }
+}
+
+/* ================= Custom Hero Settings ================ */
+@media (max-width: 980px) {
+    .hero-body .title {
+        font-size: 3em;
+    }
+
+    .hero-body .button.is-primary {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-body .title {
+        font-size: 2em;
+    }
+
+    .hero-body .button.is-primary {
+		display: none;
+    }
+}
+/* ========================================================= */
