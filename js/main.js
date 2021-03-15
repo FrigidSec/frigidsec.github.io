@@ -1,4 +1,10 @@
 $(document).ready(() => {
+    AOS.init({
+        delay: 200,
+        duration: 750,
+        mirror: "true",
+        easing: "ease-in-out",
+    });
     $("#introButton").on("click", () => {
         location.hash = "intro";
     })
